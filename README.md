@@ -500,7 +500,7 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
     createuser msf -P -h localhost
     createdb -O msf msf -h localhost
     
-msf
+#### msf
 
     gem install pg sqlite3 msgpack activerecord redcarpet rspec simplecov yard bundler
     cd /usr/local/share/
