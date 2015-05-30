@@ -490,6 +490,15 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
 
 tbw
 
+## JTR Jumbo
+
+tbw
+
+## Hashcat
+
+tbw
+
+
 ## LESS
 
 CSS preprocessors are becoming quite popular, the most popular processors are [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com). Preprocessing is a lot like compiling code for CSS. It allows you to reuse CSS in many different ways. Let's start out with using LESS as a basic preprocessor, it's used by a lot of popular CSS frameworks like [Bootstrap](http://getbootstrap.com/).
