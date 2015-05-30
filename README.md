@@ -489,10 +489,10 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
 ## Metasploit
     xcode-select --install
     Java http://download.oracle.com/otn-pub/java/jdk/8u40-b27/jdk-8u40-macosx-x64.dmg
-### Nmap (MSF)
+#### Nmap (MSF)
     brew install nmap
 
-### PostgreSQL (MSF)
+#### PostgreSQL (MSF)
     brew install postgresql --without-ossp-uuid
     mkdir -p ~/Library/LaunchAgents
     cp /usr/local/Cellar/postgresql/9.4.1/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/
@@ -500,17 +500,16 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
     createuser msf -P -h localhost
     createdb -O msf msf -h localhost
     
+msf    
     gem install pg sqlite3 msgpack activerecord redcarpet rspec simplecov yard bundler
-
     cd /usr/local/share/
     git clone https://github.com/rapid7/metasploit-framework.git
     cd metasploit-framework
     for MSF in $(ls msf*); do ln -s /usr/local/share/metasploit-framework/$MSF /usr/local/bin/$MSF;done
     sudo chmod go+w /etc/profile
     sudo echo export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml >> /etc/profile
- 
-    
-    gems need to be installed   
+     
+gems need to be installed   
 
     bundle install
     vi /usr/local/share/metasploit-framework/config/database.yml
