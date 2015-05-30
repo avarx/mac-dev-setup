@@ -500,7 +500,7 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
     createuser msf -P -h localhost
     createdb -O msf msf -h localhost
     
-msf    
+msf
     gem install pg sqlite3 msgpack activerecord redcarpet rspec simplecov yard bundler
     cd /usr/local/share/
     git clone https://github.com/rapid7/metasploit-framework.git
@@ -509,8 +509,7 @@ msf
     sudo chmod go+w /etc/profile
     sudo echo export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml >> /etc/profile
      
-gems need to be installed   
-
+gems need to be installed
     bundle install
     vi /usr/local/share/metasploit-framework/config/database.yml
     production:
