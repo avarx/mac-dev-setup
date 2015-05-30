@@ -528,11 +528,11 @@ gems need to be installed
 
 Start
 
-./msfconsole
+    ./msfconsole
 
 Check DB
 
-msf> db_status
+    msf> db_status
 
 ## JTR Jumbo
 
