@@ -18,6 +18,8 @@ This document describes how I set up my developer environment on a new MacBook o
 - [JSHint](#jshint)
 - [Ruby and RVM](#ruby-and-rvm)
 - [Metasploit](#metasploit)
+- [JTR Jumbo](#JTR-Jumbo)
+- [Hashcat](#hashcat)
 - [LESS](#less)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
