@@ -1,5 +1,5 @@
 # Mac OS X Dev Setup
-avarx version thanks to [nicolahery](https://twitter.com/nicolahery)
+avarx version - thanks to [nicolahery](https://twitter.com/nicolahery)
 
 This document describes how I set up my developer environment on a new MacBook or iMac. 
 
@@ -39,11 +39,13 @@ In **Apple Icon > System Preferences**:
 - Keyboard > Delay Until Repeat > Short (all the way to the right)
 - Dock > Automatically hide and show the Dock
 
-Hide desktop
-defaults write com.apple.finder CreateDesktop -bool false
+Hide desktop:
 
-Show hidden files
-defaults write com.apple.finder AppleShowAllFiles TRUE
+    defaults write com.apple.finder CreateDesktop -bool false
+
+Show hidden files:
+
+    defaults write com.apple.finder AppleShowAllFiles TRUE
 
 ## Google Chrome
 
