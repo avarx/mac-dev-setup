@@ -37,6 +37,12 @@ In **Apple Icon > System Preferences**:
 - Keyboard > Delay Until Repeat > Short (all the way to the right)
 - Dock > Automatically hide and show the Dock
 
+Hide desktop
+defaults write com.apple.finder CreateDesktop -bool false
+
+Show hidden files
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
 ## Google Chrome
 
 Install your favorite browser, mine happens to be Chrome.
