@@ -540,8 +540,7 @@ Check DB
 
 ## Hashcat
 
-tbw
-
+    wget http://hashcat.net/files/hashcat-0.49.7z
 
 ## LESS
 
