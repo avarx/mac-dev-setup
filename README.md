@@ -536,7 +536,7 @@ Check DB
 
 ## JTR Jumbo
 
-tbw
+    wget http://www.openwall.com/john/j/john-1.8.0-jumbo-1.tar.gz
 
 ## Hashcat
 
