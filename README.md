@@ -1,5 +1,5 @@
 # Mac OS X Dev Setup
-avarx version - thanks to [nicolahery](https://twitter.com/nicolahery)
+avarx version - thanks to [nicolahery](https://twitter.com/nicolas_hery)
 
 This document describes how I set up my developer environment on a new MacBook or iMac. 
 
