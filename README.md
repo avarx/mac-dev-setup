@@ -20,6 +20,8 @@ This document describes how I set up my developer environment on a new MacBook o
 - [Metasploit](#metasploit)
 - [JTR Jumbo](#JTR-Jumbo)
 - [Hashcat](#hashcat)
+- [Wireshark](#wireshark)
+- [Tunnelblick](#tunnelblick)
 - [LESS](#less)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
@@ -541,6 +543,10 @@ Check DB
 ## Hashcat
 
     wget http://hashcat.net/files/hashcat-0.49.7z
+
+## Wireshark
+
+## Tunnelblick
 
 ## LESS
 
