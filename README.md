@@ -22,6 +22,7 @@ This document describes how I set up my developer environment on a new MacBook o
 - [Hashcat](#hashcat)
 - [Wireshark](#wireshark)
 - [Tunnelblick](#tunnelblick)
+- [Slack](#slack)
 - [LESS](#less)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
@@ -551,6 +552,10 @@ https://2.na.dl.wireshark.org/osx/Wireshark%201.12.5%20Intel%2064.dmg
 ## Tunnelblick
 
 https://code.google.com/p/tunnelblick/wiki/DownloadsEntry#Tunnelblick_Stable_Release
+
+## Slack
+
+https://itunes.apple.com/app/slack/id803453959?ls=1&mt=12
 
 ## LESS
 
