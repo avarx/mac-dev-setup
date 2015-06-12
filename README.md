@@ -21,8 +21,6 @@ This document describes how I set up my developer environment on a new MacBook o
 - [JTR Jumbo](#JTR-Jumbo)
 - [Hashcat](#hashcat)
 - [Wireshark](#wireshark)
-- [Tunnelblick](#tunnelblick)
-- [Slack](#slack)
 - [LESS](#less)
 - [Projects folder](#projects-folder)
 - [Apps](#apps)
@@ -549,14 +547,6 @@ Check DB
 
 https://2.na.dl.wireshark.org/osx/Wireshark%201.12.5%20Intel%2064.dmg
 
-## Tunnelblick
-
-https://code.google.com/p/tunnelblick/wiki/DownloadsEntry#Tunnelblick_Stable_Release
-
-## Slack
-
-https://itunes.apple.com/app/slack/id803453959?ls=1&mt=12
-
 ## LESS
 
 CSS preprocessors are becoming quite popular, the most popular processors are [LESS](http://lesscss.org/) and [SASS](http://sass-lang.com). Preprocessing is a lot like compiling code for CSS. It allows you to reuse CSS in many different ways. Let's start out with using LESS as a basic preprocessor, it's used by a lot of popular CSS frameworks like [Bootstrap](http://getbootstrap.com/).
@@ -604,6 +594,9 @@ Here is a quick list of some apps I use, and that you might find useful as well:
 - [Marked](http://markedapp.com/): As a developer, most of the stuff you write ends up being in [Markdown](http://daringfireball.net/projects/markdown/). In fact, this `README.md` file (possibly the most important file of a GitHub repo) is indeed in Markdown, written in Sublime Text, and I use Marked to preview the results everytime I save. **($4)**
 - [Evernote](https://evernote.com/): If I don't write something down, I'll forget it. As a developer, you learn so many new things every day, and technology keeps changing, it would be insane to want to keep it all in your head. So take notes, sync them to the cloud, and have them on all your devices. To be honest, I switched to [Simplenote](http://simplenote.com/) because I only take text notes, and I got tired of Evernote putting extra spaces between paragraphs when I copy & pasted into other applications. Simplenote is so much better for text notes (and it supports Markdown!). **(Both are free)**
 - [Moom](http://manytricks.com/moom/): Don't waste time resizing and moving your windows. Moom makes this very easy. **($10)**
+- [Tunnelblick](https://code.google.com/p/tunnelblick/wiki/DownloadsEntry#Tunnelblick_Stable_Release): VPN. **(free)**
+- [Slack](https://itunes.apple.com/app/slack/id803453959?ls=1&mt=12): Be less busy. **(free)**
+
 
 
 
