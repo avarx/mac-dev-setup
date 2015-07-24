@@ -20,6 +20,9 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 # start mailcatcher background
 alias mcatcher="mailcatcher -f"
 
+# composer
+alias composer="php /usr/local/bin/composer"
+
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
