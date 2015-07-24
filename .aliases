@@ -17,6 +17,9 @@ alias webroot="cd /Library/WebServer/webroot/"
 #start sublime
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
+# start mailcatcher background
+alias mcatcher="mailcatcher -f"
+
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
