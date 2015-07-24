@@ -14,6 +14,7 @@ This document describes how I set up my developer environment on a new MacBook o
 - [Git](#git)
 - [Sublime Text](#sublime-text)
 - [PEAR](#pear)
+- [CodeSniffer](#codesniffer)
 - [Python](#python)
 - [Node.js](#nodejs)
 - [JSHint](#jshint)
@@ -270,6 +271,8 @@ Sublime Text is very extensible. For now we'll leave it like that, we already ha
 
 http://blog.avarx.io/pear/
 
+## CodeSniffer
+http://blog.avarx.io/codesniffer/
 
 ## Python
 
