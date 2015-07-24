@@ -218,66 +218,48 @@ Go ahead and [download](http://www.sublimetext.com/) it. Open the **.dmg** file,
 
 Sublime Text is not free, but I think it has an unlimited "evaluation period". Anyhow, we're going to be using it so much that even the seemingly expensive $70 price tag is worth every penny. If you can afford it, I suggest you [support](http://www.sublimetext.com/buy) this awesome tool. :)
 
-Just like the terminal, let's configure our editor a little. Go to **Sublime Text 2 > Preferences > Settings - User** and paste the following in the file that just opened:
+Just like the terminal, let's configure our editor a little. Go to **Sublime Text 3 > Preferences > Settings - User** and paste the following in the file that just opened:
 
 ```json
 {
-    "font_face": "Consolas",
-    "font_size": 13,
-    "rulers":
+    "draw_white_space": "all",
+    "font_size": 12,
+    "ignored_packages":
     [
-        79
+        "Vintage",
+        "RestructuredText"
     ],
-    "highlight_line": true,
-    "bold_folder_labels": true,
-    "highlight_modified_tabs": true,
-    "tab_size": 2,
+    "show_encoding": true,
+    "tab_size": 4,
     "translate_tabs_to_spaces": true,
-    "word_wrap": false,
-    "indent_to_bracket": true
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": "true"
 }
+
 ```
-    
+
 Feel free to tweak these to your preference. When done, save the file and close it.
-
-I use tab size 2 for everything except Python and Markdown files, where I use tab size 4. If you have a Python and Markdown file handy (or create dummy ones with `$ touch dummy.py`), for each one, open it and go to **Sublime Text 2 > Preferences > Settings - More > Syntax Specific - User** to paste in:
-
-```json
-{
-    "tab_size": 4
-}
-```
 
 Now for the color. I'm going to change two things: the **Theme** (which is how the tabs, the file explorer on the left, etc. look) and the **Color Scheme** (the colors of the code). Again, feel free to pick different ones, or stick with the default.
 
-A popular Theme is the [Soda Theme](https://github.com/buymeasoda/soda-theme). To install it, run:
+http://equinusocio.github.io/material-theme/
+A popular Theme is the [Soda Theme](http://equinusocio.github.io/material-theme/). To install it, run:
 
-    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-    $ git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"
-    
-Then go to **Sublime Text 2 > Preferences > Settings - User** and add the following two lines:
+    https://packagecontrol.io/packages/Material%20Theme
 
-    "theme": "Soda Dark.sublime-theme",
-    "soda_classic_tabs": true
 
-Restart Sublime Text for all changes to take effect (Note: on the Mac, closing all windows doesn't close the application, you need to hit **Cmd+Q**).
 
-The Soda Theme page also offers some [extra color schemes](https://github.com/buymeasoda/soda-theme#syntax-highlighting-colour-schemes) you can download and try. But to be consistent with my terminal, I like to use the **Solarized** Color Scheme, which already ships with Sublime Text. To use it, just go to **Sublime Text 2 > Preferences > Color Scheme > Solarized (Dark)**. Again, this is really according to personal flavors, so pick what you want.
+Sublime Text 3 already supports syntax highlighting for a lot of languages. I'm going to install a couple that are missing:
 
-Sublime Text 2 already supports syntax highlighting for a lot of languages. I'm going to install a couple that are missing:
-
-    $ cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-    $ git clone https://github.com/jashkenas/coffee-script-tmbundle CoffeeScript
-    $ git clone https://github.com/miksago/jade-tmbundle Jade
-    $ git clone https://github.com/danro/LESS-sublime.git LESS
+    $ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
     $ git clone -b SublimeText2 https://github.com/kuroir/SCSS.tmbundle.git SCSS
-    $ git clone https://github.com/nrw/sublime-text-handlebars Handlebars
+
 
 Let's create a shortcut so we can launch Sublime Text from the command-line:
 
     $ cd ~
     $ mkdir bin
-    $ ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+    $ ln -s "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 Now I can open a file with `$ subl myfile.py` or start a new project in the current directory with `$ subl .`. Pretty cool.
 
