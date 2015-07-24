@@ -1,7 +1,7 @@
 # Mac OS X Dev Setup
 avarx version - thanks to [nicolahery](https://twitter.com/nicolas_hery)
 
-This document describes how I set up my developer environment on a new MacBook or iMac. 
+This document describes how I set up my developer environment on a new MacBook or iMac.
 
 - [System update](#system-update)
 - [System preferences](#system-preferences)
@@ -92,17 +92,17 @@ One thing we need to do is tell the system to use programs installed by Hombrew 
 Open a new terminal tab with **Cmd+T** (you should also close the old one), then run the following command to make sure everything works:
 
     $ brew doctor
-    
+
 ### Usage
 
 To install a package (or **Formula** in Homebrew vocabulary) simply type:
 
     $ brew install <formula>
-        
+
 To update Homebrew's directory of formulae, run:
 
     $ brew update
-    
+
 **Note**: I've seen that command fail sometimes because of a bug. If that ever happens, run the following (when you have Git installed):
 
     $ cd /usr/local
@@ -112,11 +112,11 @@ To update Homebrew's directory of formulae, run:
 To see if any of your packages need to be updated:
 
     $ brew outdated
-    
+
 To update a package:
 
     $ brew upgrade <formula>
-        
+
 Homebrew keeps older versions of packages installed, in case you want to roll back. That rarely is necessary, so you can do some cleanup to get rid of those old versions:
 
     $ brew cleanup
@@ -167,7 +167,7 @@ We'll come back to the details of that later, but for now, just download the fil
     $ curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_profile
     $ curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.bash_prompt
     $ curl -O https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.aliases
-    
+
 With that, open a new terminal tab (Cmd+T) and see the change! Try the list commands: `ls`, `ls -lh` (aliased to `ll`), `ls -lha` (aliased to `la`).
 
 At this point you can also change your computer's name, which shows up in this terminal prompt. If you want to do so, go to **System Preferences** > **Sharing**. For example, I changed mine from "Nicolas's MacBook Air" to just "MacBook Air", so it shows up as `MacBook-Air` in the terminal.
@@ -181,11 +181,11 @@ Now we have a terminal we can work with!
 What's a developer without [Git](http://git-scm.com/)? To install, simply run:
 
     $ brew install git
-    
+
 When done, to test that it installed fine you can run:
 
     $ git --version
-    
+
 And `$ which git` should output `/usr/local/bin/git`.
 
 Let's set up some basic configuration. Download the [.gitconfig](https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.gitconfig) file to your home directory:
@@ -205,9 +205,9 @@ They will get added to your `.gitconfig` file.
 To push code to your GitHub repositories, we're going to use the recommended HTTPS method (versus SSH). So you don't have to type your username and password everytime, let's enable Git password caching as described [here](https://help.github.com/articles/set-up-git):
 
     $ git config --global credential.helper osxkeychain
-    
+
 **Note**: On a Mac, it is important to remember to add `.DS_Store` (a hidden OS X system file that's put in folders) to your `.gitignore` files. You can take a look at this repository's [.gitignore](https://github.com/nicolashery/mac-dev-setup/blob/master/.gitignore) file for inspiration.
-    
+
 ## Sublime Text
 
 With the terminal, the text editor is a developer's most important tool. Everyone has their preferences, but unless you're a hardcore [Vim](http://en.wikipedia.org/wiki/Vim_(text_editor)) user, a lot of people are going to tell you that [Sublime Text](http://www.sublimetext.com/) is currently the best one out there.
@@ -273,26 +273,26 @@ OS X, like Linux, ships with [Python](http://python.org/) already installed. But
 The following command will install Python 2.7 and any dependencies required (it can take a few minutes to build everything):
 
     $ brew install python
-    
+
 When finished, you should get a summary in the terminal. Running `$ which python` should output `/usr/local/bin/python`.
 
 It also installed [Pip]() (and its dependency [Distribute]()), which is the package manager for Python. Let's upgrade them both:
 
     $ pip install --upgrade distribute
     $ pip install --upgrade pip
-    
+
 Executable scripts from Python packages you install will be put in `/usr/local/share/python`, so let's add it to the `$PATH`. To do so, we'll create a `.path` text file in the home directory (I've already set up `.bash_profile` to call this file):
 
     $ cd ~
     $ subl .path
-    
+
 And add these lines to `.path`:
 
 ```bash
 PATH=/usr/local/share/python:$PATH
 export PATH
 ```
-    
+
 Save the file and open a new terminal to take the new `$PATH` into account (everytime you open a terminal, `.bash_profile` gets loaded).
 
 ### Pip Usage
@@ -304,11 +304,11 @@ Here are a couple Pip commands to get you started. To install a Python package:
 To upgrade a package:
 
     $ pip install --upgrade <package>
-        
+
 To see what's installed:
 
     $ pip freeze
-    
+
 To uninstall a package:
 
     $ pip uninstall <package>
@@ -320,7 +320,7 @@ Install [Node.js](http://nodejs.org/) with Homebrew:
 
     $ brew update
     $ brew install node
-    
+
 The formula also installs the [npm](https://npmjs.org/) package manager. However, as suggested by the Homebrew output, we need to add `/usr/local/share/npm/bin` to our path so that npm-installed modules with executables will have them picked up.
 
 To do so, add this line to your `~/.path` file, before the `export PATH` line:
@@ -328,7 +328,7 @@ To do so, add this line to your `~/.path` file, before the `export PATH` line:
 ```bash
 PATH=/usr/local/share/npm/bin:$PATH
 ```
-        
+
 Open a new terminal for the `$PATH` changes to take effect.
 
 We also need to tell npm where to find the Xcode Command Line Tools, by running:
@@ -374,9 +374,9 @@ To uninstall a package:
 
 ##JSHint
 
-JSHint is a JavaScript developer's best friend. 
+JSHint is a JavaScript developer's best friend.
 
-If the extra credit assignment to install Sublime Package Manager was completed, JSHint can be run as part of Sublime Text. 
+If the extra credit assignment to install Sublime Package Manager was completed, JSHint can be run as part of Sublime Text.
 
 Install JSHint via npm (global install preferred)
 
@@ -393,7 +393,7 @@ Like Python, [Ruby](http://www.ruby-lang.org/) is already installed on Unix syst
 When installing Ruby, best practice is to use [RVM](https://rvm.io/) (Ruby Version Manager) which allows you to manage multiple versions of Ruby on the same machine. Installing RVM, as well as the latest version of Ruby, is very easy. Just run:
 
     $ curl -L https://get.rvm.io | bash -s stable --ruby
-    
+
 When it is done, both RVM and a fresh version of Ruby 2.0 are installed. The following line was also automatically added to your `.bash_profile`:
 
 ```bash
@@ -405,7 +405,7 @@ I prefer to move that line to the `.extra` file, keeping my `.bash_profile` clea
 After that, start a new terminal and run:
 
     $ type rvm | head -1
-    
+
 You should get the output `rvm is a function`.
 
 ### Usage
@@ -431,39 +431,39 @@ You can install another version with:
 To update RVM itself, use:
 
     $ rvm get stable
-    
+
 [RubyGems](http://rubygems.org/), the Ruby package manager, was also installed:
 
     $ which gem
-    
+
 Update to its latest version with:
 
     $ gem update --system
-    
+
 To install a "gem" (Ruby package), run:
 
     $ gem install <gemname>
-        
+
 To install without generating the documentation for each gem (faster):
 
     $ gem install <gemname> --no-document
-        
+
 To see what gems you have installed:
 
     $ gem list
-    
+
 To check if any installed gems are outdated:
 
     $ gem outdated
-    
+
 To update all gems or a particular gem:
 
     $ gem update [<gemname>]
-    
+
 RubyGems keeps old versions of gems, so feel free to do come cleaning after updating:
 
     $ gem cleanup
-    
+
 I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/), which is built on top of [Sass](http://sass-lang.com/):
 
     $ gem install compass --no-document
@@ -481,7 +481,7 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
     launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
     createuser msf -P -h localhost
     createdb -O msf msf -h localhost
-    
+
 #### msf
 
     gem install pg sqlite3 msgpack activerecord redcarpet rspec simplecov yard bundler
@@ -491,7 +491,7 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
     for MSF in $(ls msf*); do ln -s /usr/local/share/metasploit-framework/$MSF /usr/local/bin/$MSF;done
     sudo chmod go+w /etc/profile
     sudo echo export MSF_DATABASE_CONFIG=/usr/local/share/metasploit-framework/config/database.yml >> /etc/profile
-     
+
 gems need to be installed
 
     bundle install
@@ -504,7 +504,7 @@ gems need to be installed
         host: 127.0.0.1
         port: 5432
         pool: 75
-        timeout: 5    
+        timeout: 5
     source /etc/profile
     source ~/.bash_profile
 
@@ -544,7 +544,7 @@ This should output some information about the compiler:
 
     lessc 1.5.1 (LESS Compiler) [JavaScript]
 
-Okay, LESS is installed and running. Great! 
+Okay, LESS is installed and running. Great!
 
 ### Usage
 
