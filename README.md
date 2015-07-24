@@ -8,6 +8,7 @@ This document describes how I set up my developer environment on a new MacBook o
 - [Google Chrome](#google-chrome)
 - [iTerm2](#iterm2)
 - [Homebrew](#homebrew)
+- [zsh](#zsh)
 - [Consolas](#consolas)
 - [Beautiful terminal](#beautiful-terminal)
 - [iTerm2](#iterm2)
