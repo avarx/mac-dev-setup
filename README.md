@@ -273,9 +273,12 @@ Now I can open a file with `$ subl myfile.py` or start a new project in the curr
 Sublime Text is very extensible. For now we'll leave it like that, we already have a solid installation. To add more in the future, a good place to start would be to install the [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation).
 
 Packages I installed:
+
     "installed_packages":
     [
+        "AdvancedNewFile",
         "Case Conversion",
+        "ColorPicker",
         "DocBlockr",
         "Emmet",
         "Indent XML",
@@ -291,6 +294,7 @@ Packages I installed:
         "StringUtilities",
         "SublimeCodeIntel",
         "Sublimerge Pro",
+        "Terminal",
         "TYPO3 Fluid Snippets",
         "TypoScript",
         "WordPress"
