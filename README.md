@@ -255,7 +255,6 @@ A popular Theme is the [Soda Theme](http://equinusocio.github.io/material-theme/
     https://packagecontrol.io/packages/Material%20Theme
 
 
-
 Sublime Text 3 already supports syntax highlighting for a lot of languages. I'm going to install a couple that are missing:
 
     $ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
