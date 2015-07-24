@@ -13,6 +13,7 @@ This document describes how I set up my developer environment on a new MacBook o
 - [iTerm2](#iterm2)
 - [Git](#git)
 - [Sublime Text](#sublime-text)
+- [PEAR](#pear)
 - [Python](#python)
 - [Node.js](#nodejs)
 - [JSHint](#jshint)
@@ -264,6 +265,10 @@ Let's create a shortcut so we can launch Sublime Text from the command-line:
 Now I can open a file with `$ subl myfile.py` or start a new project in the current directory with `$ subl .`. Pretty cool.
 
 Sublime Text is very extensible. For now we'll leave it like that, we already have a solid installation. To add more in the future, a good place to start would be to install the [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation).
+
+## PEAR
+
+http://blog.avarx.io/pear/
 
 
 ## Python
