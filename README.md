@@ -11,7 +11,6 @@ This document describes how I set up my developer environment on a new MacBook o
 - [zsh](#zsh)
 - [Consolas](#consolas)
 - [Beautiful terminal](#beautiful-terminal)
-- [iTerm2](#iterm2)
 - [Git](#git)
 - [Sublime Text](#sublime-text)
 - [PEAR](#pear)
