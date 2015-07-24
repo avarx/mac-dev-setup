@@ -130,6 +130,7 @@ To see what you have installed (with their version numbers):
 ## zsh
 
 The Z shell (zsh) is a Unix shell that can be used as an interactive login shell and as a powerful command interpreter for shell scripting.
+
     brew install zsh
 
 ## Consolas
