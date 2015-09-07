@@ -251,7 +251,7 @@ Feel free to tweak these to your preference. When done, save the file and close 
 Now for the color. I'm going to change two things: the **Theme** (which is how the tabs, the file explorer on the left, etc. look) and the **Color Scheme** (the colors of the code). Again, feel free to pick different ones, or stick with the default.
 
 http://equinusocio.github.io/material-theme/
-A popular Theme is the [Soda Theme](http://equinusocio.github.io/material-theme/). To install it, run:
+A popular Theme is the [Material Theme](http://equinusocio.github.io/material-theme/). To install it, run:
 
     https://packagecontrol.io/packages/Material%20Theme
 
